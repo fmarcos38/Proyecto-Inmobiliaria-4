@@ -1,0 +1,36 @@
+.arrow-container {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    animation: bounce 2s infinite;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 40px solid rgba(204, 204, 55, 0.849);;    /* Cambia el color aquí si deseas */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}

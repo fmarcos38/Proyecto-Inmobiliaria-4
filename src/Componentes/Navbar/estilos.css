@@ -1,0 +1,30 @@
+.cont-principal-navbar{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+}
+.cont-navbar {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.cont-items-navbar {
+    width: 50%;
+}
+.cont-items-navbar ul {
+    color: rgb(201, 201, 43);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    font-size: large;
+}
+
