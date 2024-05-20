@@ -1,29 +1,75 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import Logo from '../../Imagenes/Logo-Flor-2.jpg';
-import Img  from '../../Imagenes/wallpaperbetter.jpg';
 import './estilos.css';
-import ArrowDown from '../Flecha-animada';
 
 function Navbar() {
+
+  //estado para el icono del menú hamburg
+  const [isOpen , setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+
   return (
-    <div className='cont-principal-navbar'>
-      <div className='cont-navbar'>
-        {/* barra superior */}
-        <div className='cont-logo'>
+    <nav>
+      <div className='conteiner-navbar'>
+        {/* menu Izq */}
+        <div className='contIzq'>
+          {/* logo */}          
           <img src={Logo} alt='' className='logo' />
         </div>
-        {/* items */}
-        <div className='cont-items-navbar'>
-          <ul>
-            <li>Inicio</li>
-            <li>En venta</li>
-            <li>En alquiler</li>
-            <li>Nosotros</li>
-            <li>Contacto</li>
-          </ul>
+
+        {/* menu Derecha */}
+        <div className='contDer'>
+          {/* menu Derecho Pantalla Grande */}
+          {/* items */}
+          <div className='cont-items-navbar'>
+            <ul className='nav-lista-items'>
+              <li className='nav-items'>Inicio</li>
+              <li className='nav-items'>En venta</li>
+              <li className='nav-items'>En alquiler</li>
+              <li className='nav-items'>Nosotros</li>
+              <li className='nav-items'>Contacto</li>
+            </ul>
+          </div>
+
+
+          {/* menu hambur P.Chica */}
+          <div
+            className={`menu-icon ${isOpen ? 'open' : ''}`}
+            onClick={toggleMenu}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          {/* menu desplegable P.chica*/}
+          <div className="menu">
+            {
+              isOpen && (
+                <ul className='na-lista-pChica'>
+                  <li className='items-pChica'>
+                    <Link to='/'>Home</Link>
+                  </li>
+                  <li className='items-pChica'>
+                    <Link to='/venta'>Venta</Link>
+                  </li>
+                  <li className='items-pChica'>
+                    <Link to='/alquiler'>Alquiler</Link>
+                  </li>
+                  <li className='items-pChica'>
+                    <Link to='/nosotros'>Nosotros</Link>
+                  </li>
+                </ul>
+              )
+            }
+          </div>
         </div>
       </div>
-    </div>
+    </nav>
   )
 }
 

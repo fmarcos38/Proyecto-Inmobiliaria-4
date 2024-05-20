@@ -1,25 +1,31 @@
 import React from 'react';
 import './estilos.css';
 import CarruselLanding from '../CarruselLanding';
+import MessageCarousel from '../MuestraMsjs';
 
 function LandingPage() {
     return (
         <div className='cont-principal-landing'>
-            <div className='cont-textos'>
-                <div className='cont-texto-1'>
-                    
-                        <h2>
+            <div className='cont-elementos'>
+                <div className='cont-textos'>
+                    <div>
+                        <h1>
                             Comprar, vender o alquilar tu casa puede ser una realidad.
-                        </h2>
-                    
+                        </h1>
+                    </div>
+                    <div className='cont-mnsjs'>
+                        <MessageCarousel/>
+                    </div>
                 </div>
 
-                <div className='cont-carrusel'>
-                    <CarruselLanding/>
+                <div className='cont-carusel-land'>
+                    <div className='carruselL'>
+                        <CarruselLanding/>
+                    </div>
                 </div>
             </div>
         </div>
     )
 }
 
-export default LandingPage
+export default LandingPage;

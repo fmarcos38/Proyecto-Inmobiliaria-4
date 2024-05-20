@@ -1,18 +1,13 @@
-.btn-carrusel-prev, .btn-carrusel-next{
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 50%;
+.cont-carruselL-landing{
+    width: 100%;
+}
+.cont-carruselL{
     display: flex;
     justify-content: center;
-    transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
-    color: rgb(9, 9, 9);
-    font-size: 18px;
-    cursor: pointer;
-    z-index: 2;
+    align-items: center;
 }
-.btn-carrusel-prev{
-    left: 10px;
+.imgCarruselLanding{
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
 }

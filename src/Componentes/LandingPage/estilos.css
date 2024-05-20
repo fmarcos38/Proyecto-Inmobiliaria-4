@@ -3,34 +3,49 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     background-image: url('../../Imagenes/wallpaperbetter.jpg');
     background-size: cover; 
-    /* background-position: center; */
 }
-.cont-textos{
+.cont-elementos{
     display: flex;
-    width: 80%;
-    height: 100%;
-}
-.cont-texto-1{
-    width: 40%;
-    height: 28%;    
-    display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 60px;  
-    border-radius: 30px;
-    background-color: rgba(0, 0, 0, 0.767);
+    width: 80%;
+    height: 85%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.579);
 }
-.cont-texto-1 h2 {
-    font-size: 35px;
-    margin: 0;
+/* estilos textos */
+.cont-textos{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.cont-textos h1 {
+    text-align: start;
+    font-size: 60px;
+    margin: 0 0 0 20px;
     color: rgb(201, 201, 43);
     padding: 10px;
 }
-.cont-carrusel{
+/* estilos msjs */
+.cont-mnsjs{
+    width: 100%;
+    height: 100px;
+    margin-left: 30px;
+}
+/* estilos carrusel */
+.cont-carusel-land{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carruselL{
     width: 70%;
-
 }
 
