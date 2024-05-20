@@ -18,8 +18,10 @@ function Navbar() {
       <div className='conteiner-navbar'>
         {/* menu Izq */}
         <div className='contIzq'>
-          {/* logo */}          
-          <img src={Logo} alt='' className='logo' />
+          {/* logo */}
+          <NavLink to='/'>
+            <img src={Logo} alt='' className='logo' />
+          </NavLink>
         </div>
 
         {/* menu Derecha */}
