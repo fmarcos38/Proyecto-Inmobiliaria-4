@@ -10,6 +10,7 @@
     transition: opacity 0.5s ease-in-out; /* tiene q ser el mismo tiempo q declaro en la funcion setTimeout */
     opacity: 0;
     color: rgb(201, 201, 43);
+    text-align: center;
 }
 .message h3 {
     font-size: 30px;

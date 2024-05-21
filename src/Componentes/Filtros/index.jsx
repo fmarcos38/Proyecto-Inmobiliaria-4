@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { filtraOperacionTipo, getProps, muestraDestacadas } from '../../Redux/Actions';
 import './estilos.css'; // Importar estilos CSS
 
-const FiltrosPantallaChica = () => {
+const Filtros = () => {
 
     //estado para check venta
     const [checkedVenta, setCheckedVenta] = useState(false);
@@ -146,7 +146,7 @@ const FiltrosPantallaChica = () => {
     }
 
     return (
-        <div className='cont-barra' >
+        <div className='cont-filtros' >
             <div className='cont-titulo-filtro'>
                 <p>Filtros</p>
             </div>
@@ -173,4 +173,4 @@ const FiltrosPantallaChica = () => {
     );
 };
 
-export default FiltrosPantallaChica;
+export default Filtros;

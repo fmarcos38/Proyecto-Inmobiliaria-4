@@ -19,7 +19,7 @@ function Home() {
     }, [dispatch]);
 
     return (
-        <div className='contHome'>
+        <div className='cont-gral-Home'>
             {
                 loadding ?
                 (

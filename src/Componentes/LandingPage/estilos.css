@@ -100,6 +100,7 @@
 }
 @media screen and (max-width: 600px){
     .cont-principal-landing{
+        height: 400px;
         display: flex;
         align-items: start;
         background-size: cover;
@@ -109,7 +110,7 @@
         width: 90%;
         height: 300px;
         border-radius: 20px;
-        background-color: rgba(0, 0, 0, 0.84);
+        background-color: rgba(0, 0, 0, 0.642);
     }
     /* estilos textos */
     .cont-textos{

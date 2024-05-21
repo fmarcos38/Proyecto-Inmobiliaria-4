@@ -1,15 +1,18 @@
 import React from 'react';
 import Card from '../Card';
-import FiltrosPantallaChica from '../Filtros-Pantalla-Chica';
+import Filtros from '../Filtros';
 import './styles.css';
 
 function ListaPropiedades({allProps}) {
 
     return (
         <div className='contGralListaP'>
-            {/* filtros P.Chica */}
-            <div className='cont-filtrosPCH'>
-                <FiltrosPantallaChica/>
+            <div className='cont-titulo-listaProps'>
+                <h2>Tenemos la Propiedad que estás buscando</h2>
+            </div>
+            
+            <div className='cont-filtros-listaProps'>
+                <Filtros/>
             </div>
             
             <div className='contListaP'>

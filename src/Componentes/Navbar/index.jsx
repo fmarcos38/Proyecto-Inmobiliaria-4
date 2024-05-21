@@ -20,7 +20,7 @@ function Navbar() {
         <div className='contIzq'>
           {/* logo */}
           <NavLink to='/'>
-            <img src={Logo} alt='' className='logo' />
+            <img src={Logo} alt='' className='logo-navbar' />
           </NavLink>
         </div>
 

@@ -16,7 +16,7 @@ function Card({ id, operacion, tipo, ambientes, dormitorios, baños, sup, direcc
     return (
         <div className='contCard'>
             {/* titulo */}
-            <div className='card-title'>
+            <div className='card-cont-title'>
                 <h2>{operacion} {tipo}</h2>
             </div>
 

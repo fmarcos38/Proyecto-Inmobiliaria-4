@@ -4,7 +4,7 @@ import './estilos.css';
 
 const MessageCarousel = () => {
     const messages = [
-        'CONSTRUIMOS CONFIANZA.',
+        'CONSTRUIMOS CONFIANZA',
         'REALIZAMOS TASACIONES',
         'ATENCIÓN PROFESIONAL',
         'NUESTROS CLIENTES NOS AVALAN',

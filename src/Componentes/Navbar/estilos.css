@@ -25,7 +25,8 @@ nav {
     width: 20%;
     height: 100%;
 }
-.logo{
+.logo-navbar{
+    position: relative; /* para q se vea sobre la landing */
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -121,7 +122,7 @@ nav {
     .conteiner-navbar{        
         width: 95%;       
     }
-    .logo{
+    .logo-navbar{
         font-size: large;
     }
     .contIzq{
@@ -136,7 +137,7 @@ nav {
     .conteiner-navbar{        
         width: 95%;       
     }
-    .logo{
+    .logo-navbar{
         font-size: large;
     }
     .contIzq{
@@ -160,7 +161,7 @@ nav {
     .contIzq{
         width: 40%;
     }
-    .logo{
+    .logo-navbar{
         width: 100px;
         height: 100px;
         margin-top: 33px;

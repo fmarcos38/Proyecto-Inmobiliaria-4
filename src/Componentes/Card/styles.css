@@ -8,7 +8,7 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 370px;
+    grid-template-columns: 390px;
     grid-template-rows: 50px 250px 90px 80px;
     grid-template-areas: "title" "image" "info1" "info2";
     background: white;
@@ -19,14 +19,14 @@
     margin-bottom: 20px;
 }
 /* espacio titulo */
-.card-title {
+.card-cont-title {
+    height: 50px;
     grid-area: title;
     display: flex;
     justify-content: center;
     align-items: center;
     color: rgb(243, 247, 244);
-    background-color: rgb(19, 19, 19);;
-    
+    background-color: rgb(19, 19, 19);   
 }
 /* manejo espacio img */
 .card-image {
@@ -63,6 +63,7 @@
 }
 /* manejo de info1 */
 .card-info1 {
+    height: 90px;
     grid-area: info1;
     display: flex;
     flex-direction: column;
@@ -78,7 +79,7 @@
     margin: 3px 0 3px 3px;
 }
 .card-info1 .cont-info1 .direcc {
-    margin: 0;
+    margin: 0;    
 }
 .card-info1 .cont-info1 span {
     color: grey;
@@ -100,6 +101,7 @@
 /* manejo de info2 */
 .card-info2 {
     width: 100%;
+    height: 80px;
     grid-area: info2;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -109,7 +111,7 @@
     background-color: rgba(187, 193, 193, 0.74);
 }
 .info2 {
-    margin: 3px;
+    margin: 3px 3px 0 3px;
 }
 
 /* responsive */
