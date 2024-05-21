@@ -1,19 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './styles.css';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import { Link } from 'react-router-dom';
+import Logo from '../../Imagenes/Logo-Flor-2.jpg';
 
 function Footbar() {
     return (
         <footer className='contFooter'>
             <div className="footer">
                 <div className='divF'>
+                    {/* logo */}
                     <a href='/home'>
-                        <img
-                            src='https://upload.wikimedia.org/wikipedia/commons/6/62/Escudo_del_Club_Atl%C3%A9tico_San_Lorenzo_de_Almagro.png' alt='not found'
-                            className='iso'
-                        />
+                        <img  src={Logo} alt='' className='logo-footer'/>
                     </a>
                     <ul>
                         <li>
@@ -37,9 +36,11 @@ function Footbar() {
                                 <p>Links</p>
                             </h2>
                             <div className='divLinks'>
-                                <Link>Ventas</Link>
-                                <Link>Alquileres</Link>
-                                <Link>Locales</Link>
+                                <Link className='links-items'>Inicio</Link>
+                                <Link className='links-items'>Ventas</Link>
+                                <Link className='links-items'>Alquileres</Link>
+                                <Link className='links-items'>Nosotros</Link>
+                                <Link className='links-items'>Contacto</Link>
                             </div>
                         </li>
 
@@ -54,13 +55,6 @@ function Footbar() {
                         </li>
                     </ul>
                 </div>
-            </div>
-            
-            <div className='contTodasMedidas'>
-                <div className='line'></div>
-                <span>
-                    Todas las medidas enunciadas son meramente orientativas, las medidas exactas serán las que se expresen en el respectivo título de propiedad de cada inmueble. Todas las fotos, imagenes y videos son meramente ilustrativos y no contractuales. Los precios enunciados son meramente orientativos y no contractuales..
-                </span>
             </div>
         </footer>
     )

@@ -1,0 +1,25 @@
+.contHome{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #2d2c2cd0;
+}
+.cont-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.toggle-button {
+    width: 250px;
+    background-color: #0c0c0c;
+    color: #b31414;
+    border: none;
+    cursor: pointer;
+    padding: 15px 0;
+    font-size: 20px;
+  }

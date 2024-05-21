@@ -8,11 +8,10 @@
     flex-direction: column;
     justify-content: center;  
     align-items: center;
-    background-color: #787a78a4;
+    background-color: rgb(0, 0, 0);
 }
 .footer {
     width: 80%;
-    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +21,10 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+.logo-footer{
+    width: 150px;
+    height: 150px;
 }
 footer ul {
     display: flex;
@@ -36,30 +39,24 @@ footer ul li {
     position: relative;
     width: 35%;
 }
+/* linea superior */
 footer ul li h2 {
     display: block;
     margin-bottom: 3px;
-    border-bottom: 1px solid #ccc;
-}
-footer ul li h4 p {
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-    color: #e3e8ea;
-    font-size: .833vw;
-    line-height: .9vw;
-    text-transform: uppercase;
-    font-weight: 800;
-    vertical-align: middle;
+    border-bottom: 1px solid var(--primary-color);
 }
 footer ul li p {
     display: block;
-    color: #e3e8ea;
-    font-size: small;
+    color: var(--primary-color);
+    font-size: medium;
 }
 .divLinks{
     display: flex;
     flex-direction: column;
+}
+.links-items {
+    color: var(--primary-color);
+    text-decoration: none;
 }
 .contTodasMedidas{
     display: flex;
@@ -68,26 +65,27 @@ footer ul li p {
     align-items: center;
     width: 80%;  
 }
-.line {
-    margin-top: 10px;
-    width: 100%; /* Ancho de la línea */
-    height: 1px; /* Grosor de la línea */
-    background-color: #e3e8ea; /* Color de la línea */
-}
 footer span {
     width: 90%;
     font-size: smaller;
     margin-top: 5px;
     margin-bottom: 5px;
+    color: var(--primary-color);
 }
-
+.iconosRedes{
+    color: var(--primary-color);
+    font-size:xx-large;
+    margin-right: 10px;
+}
 
 @media screen and (max-width: 600px) {
     .divF{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        margin-right: 20px;
+        /* margin-right: 20px; */
     }
     footer ul {
         display: flex;

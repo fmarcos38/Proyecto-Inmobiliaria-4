@@ -49,21 +49,21 @@ function Navbar() {
             <span></span>
           </div>
           {/* menu desplegable P.chica*/}
-          <div className="menu">
+          <div className="menu-desplegable">
             {
               isOpen && (
                 <ul className='na-lista-pChica'>
                   <li className='items-pChica'>
-                    <Link to='/'>Home</Link>
+                    <Link to='/' className='link-navbar'>Home</Link>
                   </li>
                   <li className='items-pChica'>
-                    <Link to='/venta'>Venta</Link>
+                    <Link to='/venta' className='link-navbar'>Venta</Link>
                   </li>
                   <li className='items-pChica'>
-                    <Link to='/alquiler'>Alquiler</Link>
+                    <Link to='/alquiler' className='link-navbar'>Alquiler</Link>
                   </li>
                   <li className='items-pChica'>
-                    <Link to='/nosotros'>Nosotros</Link>
+                    <Link to='/nosotros' className='link-navbar'>Nosotros</Link>
                   </li>
                 </ul>
               )

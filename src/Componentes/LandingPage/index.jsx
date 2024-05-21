@@ -2,6 +2,7 @@ import React from 'react';
 import './estilos.css';
 import CarruselLanding from '../CarruselLanding';
 import MessageCarousel from '../MuestraMsjs';
+import ArrowDown from '../Flecha-animada';
 
 function LandingPage() {
     return (
@@ -15,6 +16,9 @@ function LandingPage() {
                     </div>
                     <div className='cont-mnsjs'>
                         <MessageCarousel/>
+                    </div>
+                    <div className='cont-flecha'>
+                        <ArrowDown/>
                     </div>
                 </div>
 

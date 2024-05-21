@@ -10,7 +10,7 @@
     height: 0;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-top: 40px solid rgba(204, 204, 55, 0.849);;    /* Cambia el color aquí si deseas */
+    border-top: 40px solid rgba(204, 204, 55, 0.849);;    /* color flecha */
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -32,5 +32,13 @@
 
     60% {
         transform: translateY(-5px);
+    }
+}
+
+/* responsive */
+@media screen and (max-width: 1100px){
+    .arrow {
+        width: 0px;
+        height: 0px;
     }
 }

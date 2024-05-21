@@ -9,9 +9,10 @@
 }
 .cont-elementos{
     display: flex;
+    justify-content: center;
     align-items: center;
     width: 80%;
-    height: 85%;
+    height: 80%;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.579);
 }
@@ -22,7 +23,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
 }
 .cont-textos h1 {
     text-align: start;
@@ -34,8 +35,16 @@
 /* estilos msjs */
 .cont-mnsjs{
     width: 100%;
-    height: 100px;
+    height: 100px;    
     margin-left: 30px;
+}
+/* flecha */
+.cont-flecha{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
 }
 /* estilos carrusel */
 .cont-carusel-land{
@@ -49,3 +58,82 @@
     width: 70%;
 }
 
+/* responsive */
+@media screen and (max-width: 1300px){
+    .cont-elementos{
+        width: 90%;
+        height: 90%;
+        margin-top: 45px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .cont-elementos{
+        width: 90%;
+        height: 80%;
+    }
+    .cont-textos h1 {
+        text-align: start;
+        font-size: 45px;
+        margin: 0 0 0 20px;
+    }
+    .carruselL{
+        width: 80%;
+    }
+
+}
+@media screen and (max-width: 815px){
+    .cont-elementos{
+        width: 90%;
+        height: 85%;
+    }
+    .cont-textos{
+        width: 40%;
+    }
+    .cont-textos h1 {
+        text-align: start;
+        font-size: 35px;
+        margin: 0 0 0 10px;
+    }
+    .cont-carusel-land{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 600px){
+    .cont-principal-landing{
+        display: flex;
+        align-items: start;
+        background-size: cover;
+        background-position: center;
+    }
+    .cont-elementos{
+        width: 90%;
+        height: 300px;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.84);
+    }
+    /* estilos textos */
+    .cont-textos{
+        width: 95%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cont-textos h1 {
+        font-size: 30px;
+    }
+    /* estilos msjs */
+    .cont-mnsjs{        
+        width: 95%;
+        height: 100px;
+        margin: 0;
+    }
+    
+    /* estilos carrusel */
+    .cont-carusel-land{
+        display: none;
+    }
+    
+    
+}
