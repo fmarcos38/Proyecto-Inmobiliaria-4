@@ -9,7 +9,6 @@ function CarruselLanding() {
         'https://static.inmofactory.com/images/inmofactory/documents/1/103879/35710682/650430494.jpg?rule=original'
     ];
 
-    console.log("fotos:", arrImgs)
     const [indexActual, setIndexActual] = useState(0); //va cambiando el indice
 
     useEffect(() => {
@@ -23,9 +22,7 @@ function CarruselLanding() {
 
     return (
         <div className='cont-carruselL-landing'>
-            <div className='cont-carruselL-btn-img'>
-                <img src={arrImgs[indexActual]} alt={`Slide ${indexActual}`} className="imgCarruselLanding" />
-            </div>
+            <img src={arrImgs[indexActual]} alt={`Slide ${indexActual}`} className="imgCarruselLanding" />            
         </div>
     )
 }

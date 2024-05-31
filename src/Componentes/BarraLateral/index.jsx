@@ -1,14 +1,25 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { filtraOperacionTipo, getProps, muestraDestacadas } from '../../Redux/Actions';
-import './estilos.css'; // Importar estilos CSS
+import FiltraPrecio from '../FIltroRangoPrecio';
+import './estilos.css'; 
+/* icono material */
+import FilterAltIcon from '@mui/icons-material/FilterAlt';
+import ApartmentIcon from '@mui/icons-material/Apartment';
+import HomeIcon from '@mui/icons-material/Home';
+import StorefrontIcon from '@mui/icons-material/Storefront';
+import terreno from '../../Imagenes/terreno.jpeg';
 
-const Filtros = ({mostrarVentaAlq}) => {
 
-    ///estado para check venta/alq
+const BarraLateral = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    //estado para check venta/alq
     const [operacion, setTipo] = useState('all'); 
     const dispatch = useDispatch();
     
+    const toggleSidebar = () => {
+        setIsOpen(!isOpen);
+    };
     const handleFilterChange = (event) => {
         const { value } = event.target;
         setTipo(value === operacion ? 'all' : value);
@@ -135,47 +146,70 @@ const Filtros = ({mostrarVentaAlq}) => {
         //dispatchAction();
     }, [dispatch, operacion]);
 
+
     return (
-        <div className='cont-filtros' >
-            <div className='cont-titulo-filtro'>
-                <p>Filtros</p>
-            </div>
+        <div className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
+            <button className="toggle-button" onClick={toggleSidebar}>
+                {
+                    isOpen ? <p className={`${isOpen ? 'p-Open' : 'p-close'}`}>Filtros</p> : <FilterAltIcon />
+                }
+            </button>
+            <div className="content">
+                {
+                    isOpen ? (
+                        <div className='cont-titulo-filtro'>
+                            <div className='opc-venta-alq'>
+                                <div>
+                                <label>VENTA</label>
+                                <input
+                                    id='venta'
+                                    type="checkbox"
+                                    value="venta"
+                                    checked={operacion === 'venta'}
+                                    onChange={handleFilterChange}
+                                    className='input-check-venta'
+                                />
+                                </div>
+                                <div>
+                                <label>ALQUILER</label>
+                                <input
+                                    id='alquiler'
+                                    type="checkbox"
+                                    value="alquiler"
+                                    checked={operacion === 'alquiler'}
+                                    onChange={handleFilterChange}
+                                    className='input-check-alq'
+                                />
+                                </div>
+                            </div>
 
-            {
-                mostrarVentaAlq &&
-                <div className='opc-venta-alq'>
-                    <label>VENTA</label>
-                    <input
-                        type='checkbox'
-                        value="venta"
-                        checked={operacion === 'venta'}
-                        onClick={(e) => handleFilterChange(e)}
-                        className='input-check-venta'
-                    />
-                    <label> - ALQUILER</label>
-                    <input
-                        type='checkbox'
-                        value="alquiler"
-                        checked={operacion === 'alquiler'}
-                        onClick={(e) => handleFilterChange(e)}
-                        className='input-check-alq'
-                    />
-                </div>
-            }
+                            <div className='cont-btn-filtros'>
+                                <button className='boton-filtros' id='depto' onClick={(e) => handleClick(e)}>Deptos</button>
+                                <button className='boton-filtros' id='casa' onClick={(e) => handleClick(e)}>Casas</button>
+                                <button className='boton-filtros' id='ph' onClick={(e) => handleClick(e)}>PH</button>
+                                <button className='boton-filtros' id='local' onClick={(e) => handleClick(e)}>Locales</button>
+                                <button className='boton-filtros' id='terreno' onClick={(e) => handleClick(e)}>Terrenos</button>
+                                <button className='boton-filtros' id='oficina' onClick={(e) => handleClick(e)}>Oficinas</button>
+                                <button className='boton-filtros' id='cochera' onClick={(e) => handleClick(e)}>Cocheras</button>
+                                <button className='boton-filtros' id='destacada' onClick={(e) => handleClick(e)}>Destacadas</button>
+                                <button className='boton-filtros' id='alqTemp' onClick={(e) => handleClick(e)}>Alquiler Temporario</button>
+                                <button className='boton-filtros' id='todas' onClick={(e) => handleClick(e)}>Todas</button>
+                            </div>
 
-            <div className='cont-btn-filtros'>
-                <button className='btn-filtros' id='depto' onClick={(e) => handleClick(e)}>Deptos</button>
-                <button className='btn-filtros' id='casa' onClick={(e) => handleClick(e)}>Casas</button>
-                <button className='btn-filtros' id='ph' onClick={(e) => handleClick(e)}>PH</button>
-                <button className='btn-filtros' id='local' onClick={(e) => handleClick(e)}>Locales</button>
-                <button className='btn-filtros' id='terreno' onClick={(e) => handleClick(e)}>Terrenos</button>
-                <button className='btn-filtros' id='oficina' onClick={(e) => handleClick(e)}>Oficinas</button>
-                <button className='btn-filtros' id='cochera' onClick={(e) => handleClick(e)}>Cocheras</button>
-                <button className='btn-filtros'  id='destacada' onClick={(e) => handleClick(e)}>Destacadas</button>
-                <button className='btn-filtros' id='todas'  onClick={(e) => handleClick(e)}>Todas</button>
+                            <FiltraPrecio operacion={operacion} />
+                        </div>
+                    ) : (
+                        <div className='closed'>
+                            <ApartmentIcon sx={{ margin: 0 }} />
+                            <HomeIcon />
+                            <StorefrontIcon />
+                            <img src={terreno} alt='' style={{ 'width': '30px', 'height': '30px', 'backgroundColor': 'black' }} />
+                        </div>
+                    )
+                }
             </div>
         </div>
     );
 };
 
-export default Filtros;
+export default BarraLateral;

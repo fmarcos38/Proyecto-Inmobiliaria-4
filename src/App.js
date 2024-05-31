@@ -1,28 +1,37 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navbar from './Componentes/Navbar';
-import Home from './Paginas/Home';
+import Home from './Pages/Home';
 import Footbar from './Componentes/Footbar';
-import DetalleProp from './Paginas/DetallePropiedad';
+import DetalleProp from './Pages/DetallePropiedad';
+import PropsVenta from './Pages/PropsVenta';
+import PropsAlquiler from './Pages/PropsAlquiler';
+import Nosotros from './Pages/Nosotros';
+import Contactanos from './Pages/Contactanos'
+import { InmobiliariaProvider } from './Context';
+
 
 function App() {
   return (
-    <div className="App">
-      {/* navbar */}
-      <Navbar/>
-      
-      <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/detalle/:id' element={<DetalleProp/>}/>
-        {/* <Route path='/venta' element={<PropsVenta/>} />
-        <Route path='/alquiler' element={<PropsAlquiler/>} />
-        <Route path='/nosotros' element={<Nosotros/>} />
-        <Route path='/contacto' element={<ContactForm/>} /> */}
-      </Routes>
-      
-      {/* footbar */}
-      <Footbar/>
-    </div>
+    <InmobiliariaProvider>
+      <div className="App">
+        {/* navbar */}
+        <Navbar />
+
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/detalle/:id' element={<DetalleProp />} />
+          <Route path='/venta' element={<PropsVenta />} />
+          <Route path='/alquiler' element={<PropsAlquiler />} />
+          <Route path='/nosotros' element={<Nosotros />} />
+          <Route path='/contacto' element={<Contactanos />} />
+        </Routes>
+
+        {/* footbar */}
+        <Footbar />
+      </div>
+    </InmobiliariaProvider>
+
   );
 }
 

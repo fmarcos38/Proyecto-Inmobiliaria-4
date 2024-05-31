@@ -1,0 +1,102 @@
+.sidebar {
+  height: auto;
+  width: 60px;
+  transition: width 0.3s ease;
+  overflow-x: hidden;
+  /* z-index: 1; */
+}
+.sidebar.open,
+.open {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: #fff;
+}
+/* .sidebar.closed  --> este se concatena con .sidebar*/
+.sidebar.closed, .closed {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: #f36e6e;
+}
+.toggle-button {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #161515;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+.cont-titulo-filtro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+}
+/* estilos 2do div */
+.opc-venta-alq{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.opc-venta-alq label {
+  font-size: large;
+  color: #fff;
+}
+.input-check-venta, .input-check-alq{
+  transform: scale(1.2); /* agranda el tamaño del checkbox */
+  margin-left: 10px;
+}
+/* estilos 3er div */
+.cont-btn-filtros {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.boton-filtros {
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background-size: 120% auto;
+  background-image: linear-gradient(315deg, #bdc3c7 0%, #2c3e50 75%);
+}
+.boton-filtros:hover {
+  background-position: right center;
+}
+.boton-filtros:active {
+  top: 2px;
+}
+.label-precio-min-max{
+  color: #fff;
+}
+  @media screen and (max-width:920px){
+    .sidebar.open{
+      width: 120px;
+      
+    }
+  }

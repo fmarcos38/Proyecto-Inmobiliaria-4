@@ -137,7 +137,7 @@
 }
 @media screen and (max-width: 843px) {
     .contCard {
-        grid-template-columns: 330px;
+        grid-template-columns: 400px;
     }    
 }
 @media screen and (max-width: 480px) {
@@ -145,7 +145,6 @@
         grid-template-columns: 380px;
     }
 }
-
 @media screen and (max-width: 390px) {
     .contCard {
         grid-template-columns: 340px;

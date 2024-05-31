@@ -30,14 +30,26 @@ function Navbar() {
           {/* items */}
           <div className='cont-items-navbar'>
             <ul className='nav-lista-items'>
-              <li className='nav-items'>Inicio</li>
-              <li className='nav-items'>En venta</li>
-              <li className='nav-items'>En alquiler</li>
-              <li className='nav-items'>Nosotros</li>
-              <li className='nav-items'>Contacto</li>
+              <Link to={'/'} className='link-navbar-pG'>
+                <li className='nav-items'>Inicio</li>
+              </Link>
+              <Link to={'/venta'} className='link-navbar-pG'>
+                <li className='nav-items'>Venta</li>
+              </Link>
+              <Link to={'/alquiler'} className='link-navbar-pG'>
+                <li className='nav-items'>Alquiler</li>
+              </Link>
+              <Link to={'/alquTemp'} className='link-navbar-pG'>
+                <li className='nav-items'>Alquiler Temporario</li>
+              </Link>
+              <Link to={'/nosotros'} className='link-navbar-pG'>
+                <li className='nav-items'>Nosotros</li>
+              </Link>
+              <Link to={'/contacto'} className='link-navbar-pG'>
+                <li className='nav-items'>Contacto</li>
+              </Link>
             </ul>
           </div>
-
 
           {/* menu hambur P.Chica */}
           <div
@@ -63,7 +75,13 @@ function Navbar() {
                     <Link to='/alquiler' className='link-navbar'>Alquiler</Link>
                   </li>
                   <li className='items-pChica'>
+                    <Link to='/alqTemp' className='link-navbar'>Alquiler temporario</Link>
+                  </li>
+                  <li className='items-pChica'>
                     <Link to='/nosotros' className='link-navbar'>Nosotros</Link>
+                  </li>
+                  <li className='items-pChica'>
+                    <Link to='/contacto' className='link-navbar'>Contacto</Link>
                   </li>
                 </ul>
               )

@@ -3,7 +3,7 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     background-image: url('../../Imagenes/wallpaperbetter.jpg');
     background-size: cover; 
 }
@@ -11,14 +11,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 70%;
+    margin-top: 60px;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.579);
 }
 /* estilos textos */
 .cont-textos{
-    width: 50%;
+    width: 35%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -27,7 +28,7 @@
 }
 .cont-textos h1 {
     text-align: start;
-    font-size: 60px;
+    font-size: 40px;
     margin: 0 0 0 20px;
     color: rgb(201, 201, 43);
     padding: 10px;
@@ -48,14 +49,11 @@
 }
 /* estilos carrusel */
 .cont-carusel-land{
-    width: 50%;
+    width: 55%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.carruselL{
-    width: 70%;
 }
 
 /* responsive */

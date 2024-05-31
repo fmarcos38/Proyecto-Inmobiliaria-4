@@ -1,5 +1,5 @@
 import React from 'react'
-import FormularioContacto from '../../components/FormularioContacto'
+import FormularioContacto from '../../Componentes/FormularioContacto'
 import './estilos.css';
 
 

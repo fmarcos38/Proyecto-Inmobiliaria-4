@@ -1,12 +1,12 @@
-.cont-filtros {  
+.cont-filtros {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  /* background-color: #242424; */
+  width: 90%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;  
   background-color: var(--background-color);
 }
 /* est. 1er div */
@@ -37,15 +37,18 @@
 /* estilos 3er div */
 .cont-btn-filtros {
   display: flex;
+  flex-direction: row; /* como usé flex-direction antes acá tamb SOLO q cambio x row */
+  flex-wrap: wrap;
   justify-content: space-around;
   width: 90%;
   margin-bottom: 20px;
 }
 .btn-filtros {
-  width: 100px;
-  height: 40px;
+  width: 80px;
+    height: 35px;
+    padding: 5px 5px;
+    margin: 5px;
   background-color: var(--primary-color);
-  padding: 5px 10px;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -63,39 +66,7 @@
 .btn-filtros:active {
   top: 2px;
 }
-
-
-/* responsive */
-@media screen and (max-width: 1250px){ 
-  .btn-filtros {
-    width: 90px;
-    height: 35px;
-    padding: 5px 5px;
-    margin: 5px;
-  }
+.input-check-venta, .input-check-alq{
+  transform: scale(1); /* agranda el tamaño del checkbox */
 }
 
-@media screen and (max-width: 800px){
-  .cont-filtros {
-    width: 90%;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 10px;
-  }
-  /* estilos 3er div */
-  .cont-btn-filtros {
-    width: 90%;
-    flex-direction: row; /* como usé flex-direction antes acá tamb SOLO q cambio x row */
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-  }
-  .btn-filtros {
-    width: 80px;
-    height: 35px;
-    padding: 5px 5px;
-    margin: 5px;
-  }
-  .input-check-venta, .input-check-alq{
-    transform: scale(1); /* agranda el tamaño del checkbox */
-  }
-}

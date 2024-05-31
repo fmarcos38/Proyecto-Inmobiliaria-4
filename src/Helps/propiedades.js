@@ -12,6 +12,8 @@ export const propiedades = [
         descripcion_Breve: "2 Ambientes a la calle - Con cochera - ",
         descripcion_Detalle: "2 Ambientes a la calle - Con cochera - 2 Ambientes a la calle - Con cochera - 2 Ambientes a la calle - Con cochera - ",
         precio: 123.123,
+        destacada: true,
+        video: true,
         imagenes:[
             "https://static.tokkobroker.com/water_pics/10433106557024904359589114338439831515932919706821714076681370660991596683024.jpg",
             "https://static.tokkobroker.com/water_pics/10579583283677420108346448646810473713399183480841229764888790760622851846844.jpg",
@@ -32,7 +34,9 @@ export const propiedades = [
         barrio: 'guemes',
         descripcion_Breve: "2 Ambientes a la calle - Con cochera - ",
         descripcion_Detalle: "2 Ambientes a la calle - Con cochera - 2 Ambientes a la calle - Con cochera - 2 Ambientes a la calle - Con cochera - ",
-        precio: 123.123,
+        precio: 100000,
+        destacada: true,
+        video: true,
         imagenes:[
             "https://static.tokkobroker.com/water_pics/10433106557024904359589114338439831515932919706821714076681370660991596683024.jpg",
             "https://static.tokkobroker.com/water_pics/10579583283677420108346448646810473713399183480841229764888790760622851846844.jpg",
@@ -53,7 +57,8 @@ export const propiedades = [
         barrio: 'guemes',
         descripcion_Breve: "2 Ambientes a la calle - Con cochera - ",
         descripcion_Detalle: "2 Ambientes a la calle - Con cochera - 2 Ambientes a la calle - Con cochera - 2 Ambientes a la calle - Con cochera - ",
-        precio: 123.123,
+        precio: 80000,
+        video: true,
         imagenes:[
             "https://static.tokkobroker.com/water_pics/10433106557024904359589114338439831515932919706821714076681370660991596683024.jpg",
             "https://static.tokkobroker.com/water_pics/10579583283677420108346448646810473713399183480841229764888790760622851846844.jpg",
@@ -74,7 +79,7 @@ export const propiedades = [
         barrio: 'guemes',
         descripcion_Breve: "2 Ambientes a la calle - Con cochera - ",
         descripcion_Detalle: "2 Ambientes a la calle - Con cochera - 2 Ambientes a la calle - Con cochera - 2 Ambientes a la calle - Con cochera - ",
-        precio: 123.123,
+        precio: 75000,
         imagenes:[
             "https://static.tokkobroker.com/water_pics/10433106557024904359589114338439831515932919706821714076681370660991596683024.jpg",
             "https://static.tokkobroker.com/water_pics/10579583283677420108346448646810473713399183480841229764888790760622851846844.jpg",
@@ -95,7 +100,7 @@ export const propiedades = [
         barrio: 'guemes',
         descripcion_Breve: "2 Ambientes a la calle - Con cochera - ",
         descripcion_Detalle: "2 Ambientes a la calle - Con cochera - 2 Ambientes a la calle - Con cochera - 2 Ambientes a la calle - Con cochera - ",
-        precio: 123.123,
+        precio: 70000,
         imagenes:[
             "https://static.tokkobroker.com/water_pics/10433106557024904359589114338439831515932919706821714076681370660991596683024.jpg",
             "https://static.tokkobroker.com/water_pics/10579583283677420108346448646810473713399183480841229764888790760622851846844.jpg",
@@ -116,7 +121,7 @@ export const propiedades = [
         barrio: 'guemes',
         descripcion_Breve: "2 Ambientes a la calle - Con cochera - ",
         descripcion_Detalle: "2 Ambientes a la calle - Con cochera - 2 Ambientes a la calle - Con cochera - 2 Ambientes a la calle - Con cochera - ",
-        precio: 123.123,
+        precio: 200000,
         imagenes:[
             "https://static.tokkobroker.com/water_pics/10433106557024904359589114338439831515932919706821714076681370660991596683024.jpg",
             "https://static.tokkobroker.com/water_pics/10579583283677420108346448646810473713399183480841229764888790760622851846844.jpg",
@@ -137,7 +142,7 @@ export const propiedades = [
         barrio: 'guemes',
         descripcion_Breve: "2 Ambientes a la calle - Con cochera - ",
         descripcion_Detalle: "2 Ambientes a la calle - Con cochera - 2 Ambientes a la calle - Con cochera - 2 Ambientes a la calle - Con cochera - ",
-        precio: 123.123,
+        precio: 90000,
         destacada: true,
         imagenes:[
             "https://static.tokkobroker.com/water_pics/10433106557024904359589114338439831515932919706821714076681370660991596683024.jpg",
@@ -159,7 +164,7 @@ export const propiedades = [
         barrio: 'guemes',
         descripcion_Breve: "2 Ambientes a la calle - Con cochera - ",
         descripcion_Detalle: "2 Ambientes a la calle - Con cochera - 2 Ambientes a la calle - Con cochera - 2 Ambientes a la calle - Con cochera - ",
-        precio: 123.123,
+        precio: 123.000,
         imagenes:[
             "https://static.tokkobroker.com/water_pics/10433106557024904359589114338439831515932919706821714076681370660991596683024.jpg",
             "https://static.tokkobroker.com/water_pics/10579583283677420108346448646810473713399183480841229764888790760622851846844.jpg",

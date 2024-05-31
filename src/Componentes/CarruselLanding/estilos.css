@@ -1,7 +1,5 @@
 .cont-carruselL-landing{
     width: 100%;
-}
-.cont-carruselL{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,6 +7,9 @@
 .imgCarruselLanding{
     width: 90%;
     height: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 20px;
 }
 

@@ -22,11 +22,11 @@ function Footbar() {
                             <p>
                                 Belgrano 2214 - Mar del Plata
                                 <br></br>
-                                Teléfono (0223) 4915977
+                                Teléfono (0223) 000000
                                 <br></br>
-                                Whatsapp +54 9 (223) 6349596
+                                Whatsapp +54 9 (223) 000000
                                 <br></br>
-                                info@belluccipropiedades.com
+                                info@tumail.com
                                 <br></br>
                             </p>
                         </li>
@@ -36,20 +36,20 @@ function Footbar() {
                                 <p>Links</p>
                             </h2>
                             <div className='divLinks'>
-                                <Link className='links-items'>Inicio</Link>
-                                <Link className='links-items'>Ventas</Link>
-                                <Link className='links-items'>Alquileres</Link>
-                                <Link className='links-items'>Nosotros</Link>
-                                <Link className='links-items'>Contacto</Link>
+                                <Link to={'/'} className='links-items'>Inicio</Link>
+                                <Link to={'/venta'} className='links-items'>Ventas</Link>
+                                <Link to={'/alquiler'} className='links-items'>Alquileres</Link>
+                                <Link to={'/nosotros'} className='links-items'>Nosotros</Link>
+                                <Link to={'/contacto'} className='links-items'>Contacto</Link>
                             </div>
                         </li>
 
                         <li>
                             <h2><p>Seguinos</p></h2>
-                            <a href='https://www.instagram.com/florm.bienesraices/'>
+                            <a href='https://www.instagram.com/fmarcos_casla/'>
                                 <InstagramIcon className='iconosRedes' />
                             </a>
-                            <a href='http://api.whatsapp.com/send?phone=2234422665'>
+                            <a href='http://api.whatsapp.com/send?phone=2281460124'>
                                 <WhatsAppIcon className='iconosRedes' />
                             </a>
                         </li>

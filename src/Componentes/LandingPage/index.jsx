@@ -23,9 +23,7 @@ function LandingPage() {
                 </div>
 
                 <div className='cont-carusel-land'>
-                    <div className='carruselL'>
-                        <CarruselLanding/>
-                    </div>
+                    <CarruselLanding/>                    
                 </div>
             </div>
         </div>

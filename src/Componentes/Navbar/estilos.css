@@ -27,10 +27,9 @@ nav {
 }
 .logo-navbar{
     position: relative; /* para q se vea sobre la landing */
-    width: 150px;
-    height: 150px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
-    margin-top: 53px;
 }
 
 /* lado der */
@@ -57,7 +56,9 @@ nav {
 .nav-items{
     color: var(--primary-color);
 }
-
+.link-navbar-pG{
+    text-decoration: none;
+}
 /* menu hambur pantalla chica*/
 .menu-icon span {
     width: 100%;
@@ -74,7 +75,6 @@ nav {
 .menu-icon.open span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
-/* menu desplegable del hambur*/
 .menu-desplegable {
     position: absolute;
     top: 80px;
