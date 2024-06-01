@@ -15,7 +15,7 @@ function PropsVenta() {
                 <h1>Propiedades Destacadas</h1>
                 {/* filtros */}
                 <div className='cont-filtros-venta'>
-                    <Filtros mostrarVentaAlq={false}/>
+                    <Filtros mostrarVentaAlq={true}/>
                 </div>
                 <div className='cont-destacadas'>
                     <ListaPropiedades allProps={destacada} />

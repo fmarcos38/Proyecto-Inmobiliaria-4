@@ -4,7 +4,7 @@ import ListaPropiedades from '../../Componentes/ListaPropiedades';
 import BarraLateral from '../../Componentes/BarraLateral';
 
 
-function PropsVenta() {
+function PropsAlqTemp() {
 
     const props = useSelector(state => state.propiedades);
     const alqTemp = props.filter(p => p.operacion === 'venta');
@@ -16,7 +16,7 @@ function PropsVenta() {
             <div className='cont-filtros-listaProps'>
                 {/* filtros */}
                 <div className='cont-barraL'>
-                    <BarraLateral />
+                    <BarraLateral muestraVentaAlq={false}/>
                 </div>
 
                 {/* lista props */}
@@ -28,4 +28,4 @@ function PropsVenta() {
     )
 }
 
-export default PropsVenta
+export default PropsAlqTemp

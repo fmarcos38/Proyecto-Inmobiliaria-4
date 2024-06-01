@@ -8,10 +8,9 @@ import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import ApartmentIcon from '@mui/icons-material/Apartment';
 import HomeIcon from '@mui/icons-material/Home';
 import StorefrontIcon from '@mui/icons-material/Storefront';
-import terreno from '../../Imagenes/terreno.jpeg';
 
 
-const BarraLateral = () => {
+const BarraLateral = ({muestraVentaAlq}) => {
     const [isOpen, setIsOpen] = useState(false);
     //estado para check venta/alq
     const [operacion, setTipo] = useState('all'); 
@@ -158,7 +157,9 @@ const BarraLateral = () => {
                 {
                     isOpen ? (
                         <div className='cont-titulo-filtro'>
-                            <div className='opc-venta-alq'>
+                            {
+                                muestraVentaAlq &&
+                                <div className='opc-venta-alq'>
                                 <div>
                                 <label>VENTA</label>
                                 <input
@@ -182,6 +183,7 @@ const BarraLateral = () => {
                                 />
                                 </div>
                             </div>
+                            }
 
                             <div className='cont-btn-filtros'>
                                 <button className='boton-filtros' id='depto' onClick={(e) => handleClick(e)}>Deptos</button>
@@ -203,7 +205,6 @@ const BarraLateral = () => {
                             <ApartmentIcon sx={{ margin: 0 }} />
                             <HomeIcon />
                             <StorefrontIcon />
-                            <img src={terreno} alt='' style={{ 'width': '30px', 'height': '30px', 'backgroundColor': 'black' }} />
                         </div>
                     )
                 }

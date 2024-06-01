@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { filtraOperacionTipo, getProps, muestraDestacadas } from '../../Redux/Actions';
 import './estilos.css'; // Importar estilos CSS
 
-const Filtros = ({mostrarVentaAlq}) => {
+const Filtros = ({muestraVentaAlq}) => {
 
     ///estado para check venta/alq
     const [operacion, setTipo] = useState('all'); 
@@ -142,8 +142,9 @@ const Filtros = ({mostrarVentaAlq}) => {
             </div>
 
             {
-                mostrarVentaAlq &&
+                muestraVentaAlq &&
                 <div className='opc-venta-alq'>
+                    <div>
                     <label>VENTA</label>
                     <input
                         type='checkbox'
@@ -152,7 +153,9 @@ const Filtros = ({mostrarVentaAlq}) => {
                         onClick={(e) => handleFilterChange(e)}
                         className='input-check-venta'
                     />
-                    <label> - ALQUILER</label>
+                    </div>
+                    <div>
+                    <label>ALQUILER</label>
                     <input
                         type='checkbox'
                         value="alquiler"
@@ -160,6 +163,7 @@ const Filtros = ({mostrarVentaAlq}) => {
                         onClick={(e) => handleFilterChange(e)}
                         className='input-check-alq'
                     />
+                    </div>
                 </div>
             }
 

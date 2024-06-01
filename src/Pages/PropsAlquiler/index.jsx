@@ -17,7 +17,7 @@ function PropsAlquiler() {
             <div className='cont-filtros-listaProps'>
                 {/* filtros */}
                 <div className='cont-barraL'>
-                    <BarraLateral />
+                    <BarraLateral muestraVentaAlq={false}/>
                 </div>
 
                 {/* lista props */}

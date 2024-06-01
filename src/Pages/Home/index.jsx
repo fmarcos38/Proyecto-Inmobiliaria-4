@@ -36,11 +36,11 @@ function Home() {
                             <div className='cont-filtros-listaP'>
                                 {/* filtros */}
                                 <div className='cont-barraL'>
-                                    <BarraLateral />
+                                    <BarraLateral muestraVentaAlq={true}/>
                                 </div>
                                 {/* filtros PCH */}
                                 <div className='filtros'>                                    
-                                    <Filtros/>
+                                    <Filtros muestraVentaAlq={true}/>
                                 </div>                               
 
                                 {/* lista props */}
