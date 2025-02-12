@@ -159,7 +159,7 @@ nav {
         height: 100%;
     }
     .contIzq{
-        width: 40%;
+        width: 80%;
     }
     .logo-navbar{
         width: 100px;
@@ -168,7 +168,7 @@ nav {
     }
     .contDer{
         justify-content: end;    
-        width: 60%;
+        width: 20%;
     }
     .cont-items-navbar{
         display: none;
@@ -182,8 +182,5 @@ nav {
         justify-content: space-between;
         cursor: pointer;
     }
-    .menu {        
-        top: 60px;
-        right: 0;
-    }
+    
 }
